@@ -1,0 +1,18 @@
+site_name: ComputePods Development Tasks
+
+site_url: https://computepods.github.io/
+
+repo_url: https://github.com/computePods/developmentTasks
+
+plugins:
+  - search
+  - compute-pods
+  - awesome-pages
+  - mermaid2
+  - mkdocstrings:
+      watch:
+        - cputils
+        - tests
+
+theme:
+  name: material
