@@ -1,5 +1,7 @@
 # Task 001 implement artefactTypes
 
+- **Completed**: 2021-09-20
+
 ## Goal
 
 Develop the interface between the rulesManager and the artefactManager to
