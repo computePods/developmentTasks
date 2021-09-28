@@ -1,43 +1,30 @@
 # Task 002 simple build messages
 
+- **Completed**: 2021-09-23
+
 ## Goal
 
-The *real* goal is to populate the DependencyManager's dependency graph.
+The *real* goal is to populate the TypeManager's dependency graph, which
+provides the meta-theory for the ArtefactManager's dependency graph which
+is actually used to drive an given build cycle.
 
-To do this, we start by developing the [simple "build"
-messages](/interfaces/Build/):
-
-- "howToBuild" : From the MajorDomo-DependencyManager to a
-  Chef-RulesManager.
-
-- "canBuildFrom" : From a Chef-RulesManager to a
-  MajorDomo-DependencyManager.
+To do this, we develop the RulesManager/TypeManager interaction.
 
 ## Problem
-
-- Both the "howToBuild" and "canBuildFrom" messages make use of
-  artefactType names which (for the MajorDomo) is contained in the
-  ArtefactManager.
 
 ## Solution
 
 ## Tasks
 
-1. Refactor settlingTimer to allow multiple timers per class/object.
+- Listen for type messages
 
-2. provide list of artefact types (ArtefaceManager)
+- Build types database
 
-3. send "howToBuild" messages (DependencyManager)
+- Listen for rules messages
 
-4. receive "howToBuild" messages (RulesManager) and recognise whether or
-   not a particular RulesManager understands how to build this artefact.
+- Build rules database
 
-5. send "canBuildFrom" messages (RulesManager)
-
-6. receive "canBuildFrom" messages (DependencyManager)
-
-7. integrate "canBuildFrom" message into dependency graph
-   (DependencyManager)
+- Create GraphViz dot graph of type dependency graph (meta-theory).
 
 ## Questions
 
