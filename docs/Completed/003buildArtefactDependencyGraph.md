@@ -1,4 +1,6 @@
-# Task 002 simple build messages
+# Task 003 build artefact dependency graph
+
+**Completed**: 2021-09-28
 
 ## Goal
 
@@ -13,8 +15,6 @@ The *real* goal is to populate the ArtefactManager's dependency graph.
 - Load project files (ProjectManager)
 
 - Listen for project messages (ArtefactManager)
-
-
 
 - Create GraphViz dot Artefact Dependency Graph
 
