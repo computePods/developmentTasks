@@ -37,6 +37,11 @@ which will be integrated into the overall `cpcli` command infrastructure.
 2. **ONGOING** Provide some initial commands to prove that the interface
 works.
 
+3. Alter to allow the use of cpcli as a *testing* framework. This means we
+should be able to write tests consisting of a FastAPI call followed by a
+comparison of the result to a standard example. We should also be able to
+check the result conforms to the required JSON specification.
+
 ## Questions
 
 **Q**: How do we *dynamically* load click command "plugins" (to allow the

@@ -64,14 +64,15 @@ to be used by the user.
 3. implement a FileManager which can `rsync` files between the user's
 personal workspace and a given ComputePod.
 
-4. update `notify2nats` to broadcast new personal workspaces.
+4. update `majorDomo` to register personal workspaces.
 
-5. determine how a user will "run" the `notify2nats` tool.
+5. determine how a user will "run" the `majorDomo` tool.
 
 ## Questions
 
 **Q**: Can/should `notify2nats` automagically register a new personal
-workspace with the federation of ComputePods?
+workspace with the federation of ComputePods? (We have now brought
+majorDomo outside of the pods and unified it with inotify2nats)
 
 **A**: Yes it can... to do this it should have a command line option to
 specify the "project" (so that multiple personal workspaces can be
